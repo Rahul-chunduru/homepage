@@ -1,5 +1,11 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 
+.nav-div {
+    height: 60vh; 
+    margin: 0; 
+    float: left; 
+}
+
 nav ul {
     float: left;
     font-family:'Helvetica Neue', Helvetica, Arial, serif;
@@ -67,13 +73,14 @@ a:hover {
 }
 header {
  padding-top:40px;
+ height: 20vh; 
  padding-bottom:40px;
  font-family:'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
  background:#2e7bcf url(../assets/images/header-bg.jpg) 0 0 repeat-x;
  border-bottom:solid 1px #275da1
 }
 header h1 {
- width:540px;
+ width:540px; 
  margin-top:0;
  margin-bottom:0.2em;
  font-size:72px;
