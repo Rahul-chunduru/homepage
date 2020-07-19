@@ -1,3 +1,7 @@
+---
+---
+
+@import "jekyll-theme-architecht";
 body {
     margin: 60px auto;
     width: 70%;
@@ -40,4 +44,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+header {
+    background:#2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
 }
