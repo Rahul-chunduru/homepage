@@ -21,8 +21,13 @@ p {
 }
 a {
     text-decoration: none;
-    color: #2e7bcf;
+    color: #9ddcff;
 }
+.main_body_links {
+    text-decoration: underline;
+    color: #2e7bcf;   
+}
+
 a:hover {
     text-decoration: none;
     color: black;
