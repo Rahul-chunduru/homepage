@@ -24,8 +24,9 @@ nav ul li {
     margin-left: 40px;
 }
 footer {
-    position: relative;
-    top: 200px;
+    position: fixed;
+    bottom: : 5px;
+    width: 15vw; 
 }
 
 footer ul li
@@ -80,10 +81,10 @@ header {
  border-bottom:solid 1px #275da1
 }
 header h1 {
- width:540px; 
+ width:600px; 
  margin-top:0;
  margin-bottom:0.2em;
- font-size:72px;
+ font-size:64px;
  font-weight:normal;
  line-height:1;
  color:#fff;
@@ -115,4 +116,11 @@ header h2 {
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
  font-weight:bold
+}
+#id {
+    position: relative;
+    bottom: 50px; 
+    float: right; 
+    width: 30vh;
+    height: 30vh;
 }
