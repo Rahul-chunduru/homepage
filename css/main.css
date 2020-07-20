@@ -1,61 +1,11 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
-
-.nav-div {
-    height: 60vh; 
-    margin: 0; 
-    float: left; 
-}
-
-nav ul {
-    float: left;
-    font-family:'Helvetica Neue', Helvetica, Arial, serif;
-    padding: 20px;
-    margin-top: 10px; 
-    padding-top : 0px;    
-    list-style-type: none;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li {
-    list-style-type: none;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-footer {
-    position: fixed;
-    width: 35vw; 
-    bottom: 0;
-}
-
-footer ul li
-{
-    color: #ff7225;
-    margin: 10px; 
-    color: #000000;
-    display: inline; 
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
 html {
  font-family:sans-serif;
  -ms-text-size-adjust:100%;
  -webkit-text-size-adjust:100%
 }
 body {
- margin:0
-}
-body {
+ margin:0;
  font-family:'Helvetica Neue', Helvetica, Arial, serif;
  font-size:15px;
  font-weight:400;
@@ -67,10 +17,11 @@ p {
  margin-top:0
 }
 a {
- color:#2879d0
+    text-decoration: none;
+    color: #999;
 }
 a:hover {
- color:#2268b2
+    text-decoration: underline;
 }
 header {
  padding-top:40px;
@@ -78,7 +29,8 @@ header {
  padding-bottom:40px;
  font-family:'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
  background:#2e7bcf url(../assets/images/header-bg.jpg) 0 0 repeat-x;
- border-bottom:solid 1px #275da1
+ border-bottom:solid 1px #275da1;
+ position: relative;
 }
 header h1 {
  width:600px; 
@@ -100,27 +52,61 @@ header h2 {
  color:#9ddcff;
  letter-spacing:0
 }
-.inner {
- position:relative;
- width:940px;
- margin:0 auto
-}
-#content-wrapper {
- padding-top:30px;
- border-top:solid 1px #fff
-}
-.container {
-    margin-left: 5%; 
-    padding-left: 10%;
-}
-aside#sidebar p.repo-owner,
-aside#sidebar p.repo-owner a {
- font-weight:bold
-}
 #avatar {
     position: relative;
     bottom: 40px; 
     float: right; 
     width: 40vh;
     height: 30vh;
+}
+.inner {
+ position:relative;
+ width:940px;
+ margin:0 auto
+}
+.nav-div {
+    height: 60vh; 
+    float: left; 
+}
+nav ul {
+    float: left;
+    font-family:'Helvetica Neue', Helvetica, Arial, serif;
+    position: relative;
+    bottom: 5vh;
+    list-style-type: none;
+    list-style: none;
+    font-weight: bold;
+    padding: 0px;
+}
+nav ul li {
+    list-style-type: none;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+nav a:hover {
+    background-color: #2e7bcf;
+}
+nav ul li:hover {
+    background-color: #2e7bcf;  
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+    position: fixed;
+    left: 12vw;
+    width: 35vw; 
+    bottom: 0;
+}
+footer ul li
+{
+    color: #ff7225;
+    margin: 10px; 
+    color: #000000;
+    display: inline; 
+}
+.container {
+    margin-left: 5%; 
+    padding-left: 10%;
 }
