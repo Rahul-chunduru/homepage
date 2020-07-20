@@ -63,15 +63,16 @@ header h2 {
  letter-spacing:0
 }
 #avatar {
-    border-radius: 20%;
+    border-radius: 50%;
     background-color: white;
     position: relative;
     min-height: 128px;
     min-width: 128px;
     bottom: 4vh; 
     float: right; 
-    width: 25vh;
+    width: 22vh;
     height: 20vh;
+    padding: 10px;
 }
 .inner {
  position:relative;
