@@ -14,7 +14,10 @@ body {
  background:#fafafa url(../images/body-bg.jpg) 0 0 repeat
 }
 p {
- margin-top:0
+ color: black;
+ margin-top:0;
+ padding-left: 10px;
+ padding-right: 10x;
 }
 a {
     text-decoration: none;
