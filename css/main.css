@@ -117,10 +117,10 @@ aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
  font-weight:bold
 }
-#id {
+#avatar {
     position: relative;
-    bottom: 50px; 
+    bottom: 40px; 
     float: right; 
-    width: 30vh;
+    width: 40vh;
     height: 30vh;
 }
