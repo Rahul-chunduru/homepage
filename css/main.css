@@ -99,7 +99,7 @@ nav ul li {
     border-radius: 0px 10px 10px 0px;  
 }
 nav ul li:hover {
-    color: white;
+    color: gray;
     background-color: #fafafa;  
 }
 footer {
