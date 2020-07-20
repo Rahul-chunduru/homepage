@@ -21,7 +21,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: #9ddcff;
+    color: #2e7bcf;
 }
 a:hover {
     text-decoration: none;
@@ -65,7 +65,7 @@ header h2 {
     min-width: 128px;
     bottom: 4vh; 
     float: right; 
-    width: 30vh;
+    width: 25vh;
     height: 20vh;
 }
 .inner {
