@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="../css/main.css">
 		</head>
+		<!-- Script -->
+		<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+		<script type="text/javascript">
+
+		 var colours = [
+		    { name: 'Yellow', hex: '#FFFF00' },
+		    { name: 'LawnGreen', hex: '#7CFC00' },
+		    { name: 'Aqua', hex: '#00FFFF' }
+		];
+
+		$(function()
+		{
+		    $(document).on('click', '.colorItem', function()
+		    {
+		         $('.activeColour').css('background-color', $(this).css('background-color'));
+		    });
+
+		    var $palette = $("#palette");
+		    for (var i = 0; i < colours.length; i++)
+		    {
+		        $palette.append($('<li class="colorItem" />').css('background-color', colours[i].hex));
+		    }
+		    
+		    $('input[type="color"]').change(function() {
+		    	  $('.activeColour').css('background-color', this.value);
+		    });
+		});
+		</script>
+		<br />
 		<body>
 			 <header>
       			<div class="inner">
@@ -37,11 +67,12 @@
 			{{ content }}
 			
 			</div>
+			
 			<footer>
-	    		<ul>
 	    			<!-- should be theme set -->
-	        		<li>Choose colours</li>
-				</ul>
+	        		Choose colours
+	        		<ul id="palette"></ul>
+					<div class="activeColour"></div>
 			</footer>
 		</div>
 		</body>

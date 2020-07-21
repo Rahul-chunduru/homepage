@@ -6,6 +6,7 @@ html {
 }
 body {
  margin:0;
+ height: 100vh;
  font-family:'Helvetica Neue', Helvetica, Arial, serif;
  font-size:15px;
  font-weight:400;
@@ -129,4 +130,27 @@ footer ul li
     margin-left: 5%; 
     padding-left: 10%;
     padding-top: 2%;
+    float: right;
+}
+
+#palette
+{
+    width: 225px;
+}
+#palette li
+{
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline;
+    height: 25px;
+    float: left;
+    margin: 10px;
+    padding: 0;
+    width: 25px;
+}
+div.activeColour
+{
+    clear: both;
+    height: 25px;
+    width: 125px;        
 }
