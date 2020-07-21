@@ -43,7 +43,8 @@ header {
  min-height: 100px;
  padding-bottom:40px;
  font-family:'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
- background:var(--main-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;
+/* background:var(--main-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;*/
+ background:var(--main-color);
  border-bottom:solid 1px #275da1;
  position: relative;
 }
