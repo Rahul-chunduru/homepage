@@ -36,8 +36,8 @@
 		    var $palette = $("#palette");
 		    for (var i = 0; i < colours.length; i++)
 		    {
-		        $palette.append($('<li class="colorItem" />').css('background-color', colours[i].hex))
-		        .css('secondary-color', colour_secondary[i].hex);
+		        $palette.append($('<li class="colorItem" />').css({'background-color': colours[i].hex, 
+		        	'secondary-color', colour_secondary[i].hex}));
 		    }
 		    
 		    $('input[type="color"]').change(function() {
