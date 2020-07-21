@@ -17,18 +17,27 @@
 		    { name: 'green', hex: '#006400'}
 		];
 
+		var colour_secondary = [
+		    { name: 'blue', hex: '#9ddcff' },
+		    { name: 'orange', hex: '#fdbcb4' },
+		    { name: 'black', hex: '#696969' },
+		    { name: 'green', hex: ' #ace1af'}
+		];
+
 		$(function()
 		{
 		    $(document).on('click', '.colorItem', function()
 		    {
 		         $('.activeColour').css('background-color', $(this).css('background-color'));
-		         document.documentElement.style.setProperty("--main-color",  $(this).css('background-color'));
+		         document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
+		         document.documentElement.style.setProperty("--secondary-color",  $(this).css('secondary-color'));
 		    });
 
 		    var $palette = $("#palette");
 		    for (var i = 0; i < colours.length; i++)
 		    {
-		        $palette.append($('<li class="colorItem" />').css('background-color', colours[i].hex));
+		        $palette.append($('<li class="colorItem" />').css('background-color', colours[i].hex))
+		        .css('secondary-color', colour_secondary[i].hex);
 		    }
 		    
 		    $('input[type="color"]').change(function() {
@@ -75,7 +84,6 @@
 				<div style="float:left; margin: 10px;">
 					choose website colour
 				</div><ul id="palette"></ul>
-	    		<div class="activeColour" style="background-color: var(--main-color); float: left; margin: 0px;"></div>
 			</footer>
 		</div>
 		</body>
