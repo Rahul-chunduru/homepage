@@ -23,7 +23,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: #9ddcff;
+    color: #fafafa;
 }
 .main_body_links {
     text-decoration: underline;
@@ -90,7 +90,6 @@ header h2 {
 }
 nav ul {
     float: left;
-    font-family:'Helvetica Neue', Helvetica, Arial, serif;
     position: relative;
     bottom: 5vh;
     list-style-type: none;
