@@ -1,5 +1,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+:root{
+    --primary-color : #2e7bcf;
+}
 html {
  font-family:sans-serif;
  -ms-text-size-adjust:100%;
@@ -27,7 +30,7 @@ a {
 }
 .main_body_links {
     text-decoration: underline;
-    color: #2e7bcf;   
+    color: var(--primary-color);   
 }
 
 a:hover {
@@ -40,7 +43,7 @@ header {
  min-height: 100px;
  padding-bottom:40px;
  font-family:'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
- background:#2e7bcf url(../assets/images/header-bg.jpg) 0 0 repeat-x;
+ background:var(--primary-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;
  border-bottom:solid 1px #275da1;
  position: relative;
 }
@@ -103,7 +106,7 @@ nav ul li {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 60px;
-    background-color: #2e7bcf;
+    background-color: var(--primary-color);
     margin-bottom: 10px;
     border-radius: 0px 10px 10px 0px;  
 }
