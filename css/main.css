@@ -130,14 +130,17 @@ footer ul li
     margin-left: 5%; 
     padding-left: 10%;
     padding-top: 2%;
+    /*! float: right; */
 }
 
 #palette
 {
-    width: 225px;
+    width: 325px;
 }
 #palette li
 {
+    position: relative;
+    bottom: 15px;
     border-radius: 50%;
     cursor: pointer;
     display: inline;
