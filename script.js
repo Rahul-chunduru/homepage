@@ -33,7 +33,7 @@ $(function()
     for (var i = 0; i < colours.length; i++)
     {
         $palette.append($('<li class="colorItem" />').css({'background-color': colours[i].hex, 
-            'color': colour_secondary[i].hex})).data('index', i);
+            'color': colour_secondary[i].hex}).data('index', i));
     }
 
     var index = findGetParameter('colorIndex'); 
