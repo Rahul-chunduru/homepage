@@ -48,7 +48,6 @@ $(function()
     $(document).on('click', '.nav-bar-link', function()
     {
         var newLink = $(this).attr("href") + "?colorIndex=" + colorIndex; 
-        alert(newLink);
         $(this).attr("href", newLink); 
     })
 
@@ -69,9 +68,4 @@ function findGetParameter(parameterName) {
           if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
         });
     return result;
-}
-
-function preserveColor()
-{
-
 }
