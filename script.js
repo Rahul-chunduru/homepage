@@ -18,9 +18,15 @@ var colour_secondary = [
 
 $(function()
 {
+    var index = findGetParameter('color'); 
+    if(hasValue(index))
+    {
+        document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
+        document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex);   
+    }
+
     $(document).on('click', '.colorItem', function()
     {
-         $('.activeColour').css('background-color', $(this).css('background-color'));
          document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
          document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
     });
@@ -31,13 +37,11 @@ $(function()
         $palette.append($('<li class="colorItem" />').css({'background-color': colours[i].hex, 
             'color': colour_secondary[i].hex}));
     }
-    
-    $('input[type="color"]').change(function() {
-          $('.activeColour').css('background-color', this.value);
-    });
-
-    
 });
+
+function hasValue(data) {
+    return (data !== undefined) && (data !== null) && (data !== "");
+}
 
 function findGetParameter(parameterName) {
     var result = null,
