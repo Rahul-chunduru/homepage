@@ -23,8 +23,8 @@ $(function()
 {
     $(document).on('click', '.colorItem', function()
     {
-         var index = $(this).data('index');
-         alert(index);
+        // set colorIndex and be that color
+         colorIndex = $(this).data('index');
          document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
          document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
     });
@@ -44,6 +44,7 @@ $(function()
     document.documentElement.style.setProperty("--primary-color",  colours[colorIndex].hex);
     document.documentElement.style.setProperty("--secondary-color",  colour_secondary[colorIndex].hex); 
 
+    // send that color
     $(document).on('click', '.nav-bar-link', function()
     {
         var newLink = $(this).attr("href") + "?colorIndex=" + colorIndex; 
