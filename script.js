@@ -23,6 +23,8 @@ $(function()
 {
     $(document).on('click', '.colorItem', function()
     {
+         var index = $(this).data('index');
+         alert(index);
          document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
          document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
     });
@@ -31,7 +33,7 @@ $(function()
     for (var i = 0; i < colours.length; i++)
     {
         $palette.append($('<li class="colorItem" />').css({'background-color': colours[i].hex, 
-            'color': colour_secondary[i].hex}));
+            'color': colour_secondary[i].hex})).data('index', i);
     }
 
     var index = findGetParameter('colorIndex'); 
