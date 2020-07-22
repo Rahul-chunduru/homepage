@@ -16,6 +16,9 @@ var colour_secondary = [
     { name: 'purple', hex: '#dda0dd'}
 ];
 
+// default
+var colorIndex = 0; 
+
 $(function()
 {
     $(document).on('click', '.colorItem', function()
@@ -31,13 +34,21 @@ $(function()
             'color': colour_secondary[i].hex}));
     }
 
-    var index = findGetParameter('color'); 
+    var index = findGetParameter('colorIndex'); 
     if(hasValue(index))
     {
-        var i = parseInt(index);
-        document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
-        document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex);   
+        colorIndex = parseInt(index);
     }
+    document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
+    document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex); 
+
+    $(document).on('click', '.nav-bar-link', function()
+    {
+        var newLink = $(this).attr("href") + "?colorIndex=" + colorIndex; 
+        alert(newLink);
+        $(this).attr("href", newLink); 
+    })
+
 });
 
 function hasValue(data) {
@@ -55,4 +66,9 @@ function findGetParameter(parameterName) {
           if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
         });
     return result;
+}
+
+function preserveColor()
+{
+
 }
