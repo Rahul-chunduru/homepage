@@ -18,13 +18,6 @@ var colour_secondary = [
 
 $(function()
 {
-    var index = findGetParameter('color'); 
-    if(hasValue(index))
-    {
-        document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
-        document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex);   
-    }
-
     $(document).on('click', '.colorItem', function()
     {
          document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
@@ -36,6 +29,14 @@ $(function()
     {
         $palette.append($('<li class="colorItem" />').css({'background-color': colours[i].hex, 
             'color': colour_secondary[i].hex}));
+    }
+
+    var index = findGetParameter('color'); 
+    if(hasValue(index))
+    {
+        var i = parseInt(index);
+        document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
+        document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex);   
     }
 });
 
