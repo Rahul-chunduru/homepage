@@ -39,8 +39,8 @@ $(function()
     {
         colorIndex = parseInt(index);
     }
-    document.documentElement.style.setProperty("--primary-color",  colours[i].hex);
-    document.documentElement.style.setProperty("--secondary-color",  colour_secondary[i].hex); 
+    document.documentElement.style.setProperty("--primary-color",  colours[colorIndex].hex);
+    document.documentElement.style.setProperty("--secondary-color",  colour_secondary[colorIndex].hex); 
 
     $(document).on('click', '.nav-bar-link', function()
     {
