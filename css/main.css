@@ -22,8 +22,6 @@ body {
 p {
  color: black;
  margin-top:0;
- padding-left: 10px;
- padding-right: 10x;
 }
 a {
     text-decoration: none;
@@ -43,11 +41,15 @@ header {
  height: 15vh; 
  min-height: 100px;
  padding-bottom:40px;
- font-family:'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+ font-family:'Architects Daughter', Helvetica, Arial, serif;
 /* background:var(--primary-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;*/
  background:var(--primary-color);
  border-bottom:solid 1px #275da1;
  position: relative;
+}
+#header-wrapper {
+    width: 70%;
+    float: left;
 }
 header h1 {
  width:600px; 
@@ -65,52 +67,63 @@ header h2 {
  margin-bottom:0;
  font-size:26px;
  font-weight:normal;
- line-height:1.3;
+ line-height:1;
  color: var(--secondary-color);
  letter-spacing:0
 }
-#avatar {
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    min-height: 128px;
-    min-width: 128px;
-    bottom: 4vh; 
-    right: 2vw; 
-    float: right; 
-    width: 22vh;
-    height: 20vh;
+.inner {
+ width: 100%;
+ margin:0 auto;
+}
+.intro {
     padding: 10px;
 }
-.inner {
- position:relative;
- width:940px;
- margin:0 auto;
- padding-left: 8%;
-}
 .nav-div {
-    height: 60vh; 
-    float: left; 
-    padding-top: 30px;
+    text-align: center;
 }
 nav ul {
-    float: left;
-    position: relative;
-    bottom: 5vh;
     list-style-type: none;
     list-style: none;
     font-weight: bold;
     padding: 0px;
 }
 nav ul li {
+    display: inline;
     list-style-type: none;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 60px;
+    padding: 2vw;
+    margin: 2vw;
     background-color: var(--primary-color);
     margin-bottom: 10px;
-    border-radius: 0px 10px 10px 0px;  
+    border-radius: 10px 10px 10px 10px;  
+}
+nav ul li:hover {
+    color: gray;
+    background-color: #fafafa;  
+}
+#avatar-wrapper {
+    width: 20%; 
+    float: right;
+    margin: 10px;
+}
+#avatar {
+    display: none;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 4vh; 
+    width: 15vh;
+    height: 12vh;
+    padding: 10px;
+}
+#header-wrapper h1
+{
+    font-size: 32px;
+    padding: 10px; 
+}
+#header-wrapper h2
+{
+    font-size: 20px; 
+    padding: 10px; 
 }
 nav ul li:hover {
     color: gray;
@@ -120,6 +133,7 @@ nav ul li:hover {
     max-height: 400px; 
     max-width: 500px;
     border-radius: 10%;
+    width: 90%;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -138,15 +152,16 @@ footer ul li
     display: inline; 
 }
 .container {
-    margin-left: 5%; 
-    padding-left: 10%;
-    padding-top: 2%;
-    /*! float: right; */
+    width: 90%;
+    padding: 10px;
+}
+.intro {
+    text-align: center;
 }
 
 #palette
 {
-    width: 80vw;
+    width: 70vw;
 }
 #palette li
 {
@@ -155,15 +170,85 @@ footer ul li
     border-radius: 50%;
     cursor: pointer;
     display: inline;
-    height: 25px;
     float: left;
-    margin: 10px;
+    margin: 4px;
     padding: 0;
     width: 25px;
-}
-div.activeColour
-{
-    clear: both;
     height: 25px;
-    width: 125px;        
+}
+
+@media only screen and (min-width: 768px) {
+    .inner {
+        width: 100%;
+        margin:0 auto;
+    }
+    #avatar-wrapper {
+        width: 30%; 
+        float: right;
+        margin: 10px;
+    }
+    #avatar {
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        bottom: 5vh; 
+        left: 2vw;
+        min-height: 120px; 
+        min-width: 120px; 
+        width: 22vh;
+        height: 20vh;
+        padding: 10px;
+    }
+    #header-wrapper {
+        width: 40%;
+        float: left;
+        padding-left: 15%;
+    }
+    #header-wrapper h1
+    {
+        font-size: 54px; 
+        padding: 10px; 
+    }
+    #header-wrapper h2
+    {
+        font-size: 26px; 
+        padding: 10px; 
+    }
+    nav ul {
+        position: relative;
+        top: 20px;
+        float: left;
+        position: relative;
+        bottom: 5vh;
+        list-style-type: none;
+        list-style: none;
+        font-weight: bold;
+        padding: 0px;
+    }
+    nav ul li {
+        display: block;
+        margin: 0;
+        list-style-type: none;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 60px;
+        margin-bottom: 10px;
+        border-radius: 0px 10px 10px 0px;  
+    }
+    .container {
+        width: 80vw;
+        margin-left: 5%; 
+        padding-left: 10%;
+        padding-top: 20px;
+    }
+    .intro {
+        text-align: left;
+    }
+    #palette li {
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
 }

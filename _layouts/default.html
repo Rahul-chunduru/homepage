@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- javascript files -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="script.js"></script>
@@ -10,14 +12,14 @@
 		</head>
 		<body>
 			 <header>
-      			<div class="inner">
-      				<div style="float: left;">
+			 		<div class="inner">
+      				<div id ="header-wrapper">
       					<a href="{{ '/' | absolute_url }}">
-	    	      		<h1>{{ site.title | default: site.github.repository_name }}</h1>
+						<h1>{{ site.title | default: site.github.repository_name }}</h1>
     	    			</a>
-        				<h2>{{ site.description | default: site.github.project_tagline }}</h2>
+						<h2>{{ site.description | default: site.github.project_tagline }}</h2>
       				</div>
-        			<div>
+        			<div id="avatar-wrapper">
         				<a href="https://github.com/Rahul-chunduru">
         				<img id="avatar" src="assets/images/charmander.png" alt="">
         				</a>   
