@@ -9,7 +9,7 @@ html {
  -ms-text-size-adjust:100%;
  -webkit-text-size-adjust:100%
 }
-body {
+html, body {
  width: 100%;
  height: 100%;
  margin: 0px;
@@ -40,10 +40,11 @@ a:hover {
     color: black;
 }
 header {
- padding-top:40px;
+ padding-top:20px;
  height: 15vh; 
- min-height: 100px;
- padding-bottom:40px;
+ padding-bottom: 10px;
+ min-height: 90px;
+ overflow-x: hidden;
  font-family:'Architects Daughter', Helvetica, Arial, serif;
 /* background:var(--primary-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;*/
  background:var(--primary-color);
@@ -217,6 +218,13 @@ footer ul li
     {
         font-size: 26px; 
         padding: 10px; 
+    }
+    header {
+         padding-top:40px;
+         height: 15vh; 
+         min-height: 100px;
+         padding-bottom:40px;
+         overflow-x: hidden;
     }
     nav ul {
         position: relative;
