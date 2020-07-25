@@ -46,7 +46,6 @@ header {
  min-height: 90px;
  overflow: hidden;
  font-family:'Architects Daughter', Helvetica, Arial, serif;
-/* background:var(--primary-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;*/
  background:var(--primary-color);
  border-bottom:solid 1px #275da1;
  position: relative;
@@ -94,7 +93,7 @@ nav ul {
 nav ul li {
     display: inline;
     list-style-type: none;
-    padding: 2vw;
+    padding: 3vw;
     margin: 2vw;
     background-color: var(--primary-color);
     margin-bottom: 10px;

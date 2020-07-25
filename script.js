@@ -1,19 +1,15 @@
 var colours = [
     { name: 'blue',   hex: '#2e7bcf' },
     { name: 'orange', hex: '#f15f3e' },
-    { name: 'black',  hex: '#111111' },
-    { name: 'green',  hex: '#006400'},
     { name: 'yellow', hex: '#ffe135'},
-    { name: 'purple', hex: '#6a0dad'}
+    { name: 'black',  hex: '#111111' }
 ];
 
 var colour_secondary = [
     { name: 'blue',   hex: '#9ddcff' },
     { name: 'orange', hex: '#fdbcb4' },
-    { name: 'black',  hex: '#696969' },
-    { name: 'green',  hex: '#ace1af'},
     { name: 'yellow', hex: '#fdfd96'},
-    { name: 'purple', hex: '#dda0dd'}
+    { name: 'black',  hex: '#696969' }
 ];
 
 // default
