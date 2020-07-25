@@ -21,22 +21,7 @@ var colorIndex = 0;
 
 $(function()
 {
-    $(document).on('click', '.colorItem', function()
-    {
-        // set colorIndex and be that color
-         colorIndex = $(this).data('index');
-         document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
-         document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
-
-         if(colorIndex == 0)
-         {
-            document.querySelector('header').style.background = "url(assets/images/header-bg.jpg) 0 0 repeat-x"; 
-         }
-         else {
-            document.querySelector('header').style.background = "" ;       
-         }
-    });
-
+    // add colours
     var $palette = $("#palette");
     for (var i = 0; i < colours.length; i++)
     {
@@ -51,8 +36,19 @@ $(function()
     }
     document.documentElement.style.setProperty("--primary-color",  colours[colorIndex].hex);
     document.documentElement.style.setProperty("--secondary-color",  colour_secondary[colorIndex].hex); 
+    setBackground();
 
-    // send that color
+    // add button functionality
+     $(document).on('click', '.colorItem', function()
+    {
+        // set colorIndex and be that color
+        colorIndex = $(this).data('index');
+        document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
+        document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
+        setBackground();
+    });
+
+    // send that color through link
     $(document).on('click', '.nav-bar-link', function()
     {
         var newLink = $(this).attr("href") + "?colorIndex=" + colorIndex; 
@@ -76,4 +72,14 @@ function findGetParameter(parameterName) {
           if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
         });
     return result;
+}
+
+function setBackground() {
+    if(colorIndex == 0 || !hasValue(colorIndex))
+         {
+            document.querySelector('header').style.background = "url(assets/images/header-bg.jpg) 0 0 repeat-x"; 
+         }
+         else {
+            document.querySelector('header').style.background = "" ;       
+         }
 }
