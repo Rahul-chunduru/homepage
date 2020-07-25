@@ -27,6 +27,14 @@ $(function()
          colorIndex = $(this).data('index');
          document.documentElement.style.setProperty("--primary-color",  $(this).css('background-color'));
          document.documentElement.style.setProperty("--secondary-color",  $(this).css('color'));
+
+         if(colorIndex == 0)
+         {
+            document.querySelector('header').style.background = "url(../assets/images/header-bg.jpg) 0 0 repeat-x"; 
+         }
+         else {
+            document.querySelector('header').style.background = "" ;       
+         }
     });
 
     var $palette = $("#palette");

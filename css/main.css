@@ -44,7 +44,7 @@ header {
  height: 15vh; 
  padding-bottom: 10px;
  min-height: 90px;
- overflow-x: hidden;
+ overflow: hidden;
  font-family:'Architects Daughter', Helvetica, Arial, serif;
 /* background:var(--primary-color) url(../assets/images/header-bg.jpg) 0 0 repeat-x;*/
  background:var(--primary-color);
