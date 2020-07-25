@@ -30,7 +30,7 @@ $(function()
 
          if(colorIndex == 0)
          {
-            document.querySelector('header').style.background = "url(../assets/images/header-bg.jpg) 0 0 repeat-x"; 
+            document.querySelector('header').style.background = "url(assets/images/header-bg.jpg) 0 0 repeat-x"; 
          }
          else {
             document.querySelector('header').style.background = "" ;       
