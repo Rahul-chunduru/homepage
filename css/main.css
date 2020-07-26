@@ -93,7 +93,7 @@ nav ul {
 nav ul li {
     display: inline;
     list-style-type: none;
-    padding: 3vw;
+    padding: 10px;
     margin: 2vw;
     background-color: var(--primary-color);
     margin-bottom: 10px;
@@ -248,9 +248,10 @@ footer ul li
         border-radius: 0px 10px 10px 0px;  
     }
     .container {
-        width: 80vw;
+        position: relative;
+        left: 8vw;
+        width: 70vw;
         margin-left: 5%; 
-        padding-left: 10%;
         padding-top: 20px;
     }
     .intro {
