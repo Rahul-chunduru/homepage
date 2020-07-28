@@ -72,7 +72,7 @@ function findGetParameter(parameterName) {
 
 function setBackground() {
 
-    document.querySelector("#avatar").src = "assets/images/tropius.png";
+    document.querySelector("#avatar").src = "assets/images/charmander.png";
     if(colorIndex == 0 || !hasValue(colorIndex))
          {
             document.querySelector('header').style.background = "url(assets/images/header-bg.jpg) 0 0 repeat-x"; 
