@@ -249,10 +249,12 @@ footer ul li
     }
     .container {
         position: relative;
-        left: 5vw;
+        left: 8vw;
         width: 70vw;
         margin-left: 5%; 
         padding-top: 20px;
+        background: white;
+        margin-bottom: 20px; 
     }
     .intro {
         text-align: left;
