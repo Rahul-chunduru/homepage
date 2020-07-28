@@ -47,7 +47,6 @@ header {
  overflow: hidden;
  font-family:'Architects Daughter', Helvetica, Arial, serif;
  background:var(--primary-color);
- border-bottom:solid 1px #275da1;
  position: relative;
 }
 #header-wrapper {

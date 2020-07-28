@@ -1,14 +1,14 @@
 var colours = [
     { name: 'blue',   hex: '#2e7bcf' },
     { name: 'orange', hex: '#f15f3e' },
-    { name: 'yellow', hex: '#ffe135'},
+    { name: 'green',  hex: '#006400'},
     { name: 'black',  hex: '#111111' }
 ];
 
 var colour_secondary = [
     { name: 'blue',   hex: '#9ddcff' },
     { name: 'orange', hex: '#fdbcb4' },
-    { name: 'yellow', hex: '#fdfd96'},
+     { name: 'green',  hex: '#ace1af'},
     { name: 'black',  hex: '#696969' }
 ];
 
@@ -71,11 +71,17 @@ function findGetParameter(parameterName) {
 }
 
 function setBackground() {
+    
+    document.querySelector("#avatar").background = "url(assets/images/tropius.png)";
     if(colorIndex == 0 || !hasValue(colorIndex))
          {
             document.querySelector('header').style.background = "url(assets/images/header-bg.jpg) 0 0 repeat-x"; 
          }
          else {
-            document.querySelector('header').style.background = "" ;       
+            document.querySelector('header').style.background = "" ;
+
+            if(colorIndex == 2) {
+                document.querySelector("#avatar").background = "url(assets/images/tropius.png)";
+            }     
          }
 }
