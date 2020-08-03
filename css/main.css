@@ -225,6 +225,9 @@ footer ul li
          padding-bottom:40px;
          overflow-x: hidden;
     }
+    .nav-div {
+        position: fixed;
+    }
     nav ul {
         position: relative;
         top: 20px;
