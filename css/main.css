@@ -48,6 +48,7 @@ header {
  font-family:'Architects Daughter', Helvetica, Arial, serif;
  background:var(--primary-color);
  position: relative;
+ box-sizing: initial;
 }
 #header-wrapper {
     width: 70%;
