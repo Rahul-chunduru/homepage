@@ -243,7 +243,7 @@ footer ul li
         display: block;
         margin: 0;
         list-style-type: none;
-        padding-right: 40px;
+        padding-right: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 40px;
@@ -253,7 +253,7 @@ footer ul li
     .container {
         border-radius: 20px;
         position: relative;
-        left: 10vw;
+        left: 8vw;
         top:10px; 
         width: 70vw;
         margin-left: 5%; 
