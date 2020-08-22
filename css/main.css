@@ -34,11 +34,17 @@ a {
     text-decoration: underline;
     color: var(--primary-color);   
 }
-
 a:hover {
     text-decoration: none;
     color: black;
 }
+.about_item {
+    margin: 10px;
+}
+.about_text {
+    padding: 5px;
+}
+
 header {
  padding-top:20px;
  height: 15vh; 
@@ -167,7 +173,7 @@ footer ul li
 #palette li
 {
     position: relative;
-    bottom: 15px;
+    bottom: 5px;
     border-radius: 50%;
     cursor: pointer;
     display: inline;
