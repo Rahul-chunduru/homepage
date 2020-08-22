@@ -38,10 +38,10 @@ a:hover {
     text-decoration: none;
     color: black;
 }
-.about_item {
+.body_item {
     margin: 10px;
 }
-.about_text {
+.body_item_text {
     padding: 5px;
 }
 
