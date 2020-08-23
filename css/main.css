@@ -95,6 +95,7 @@ nav ul {
     list-style: none;
     font-weight: bold;
     padding: 0px;
+    margin-top: 20px;
 }
 nav ul li {
     display: inline;
