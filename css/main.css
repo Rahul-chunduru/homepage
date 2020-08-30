@@ -45,6 +45,18 @@ a:hover {
     padding: 5px;
 }
 
+.left-75 {
+    margin: auto;
+    width: 75%;
+}
+
+.icon-image {
+    width: 25%;
+    height: 25%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
 header {
  padding-top:20px;
  height: 15vh; 
@@ -192,6 +204,9 @@ footer ul li
     .inner {
         width: 100%;
         margin:0 auto;
+    }
+    .left-75 {
+        align: left;
     }
     #avatar-wrapper {
         width: 30%; 
