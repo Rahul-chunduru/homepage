@@ -53,6 +53,7 @@ a:hover {
 .icon-image {
     width: 25%;
     height: 25%;
+    margin-top: 10px;
     max-width: 40px;
     max-height: 40px;
 }
@@ -206,7 +207,8 @@ footer ul li
         margin:0 auto;
     }
     .left-75 {
-        align: left;
+        margin: 0;
+        align-items: flex-start;
     }
     #avatar-wrapper {
         width: 30%; 
