@@ -161,7 +161,7 @@ nav ul li:hover {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    width: 35vw;
+    width: 20vw;
     height: 30px; 
     bottom: 0;
 }
@@ -187,7 +187,7 @@ footer ul li
 #palette li
 {
     position: relative;
-    bottom: 5px;
+    top: 10px;
     border-radius: 50%;
     cursor: pointer;
     display: inline;
@@ -289,9 +289,13 @@ footer ul li
     .intro {
         text-align: left;
     }
+    footer {
+        width: 35vw;
+    }
     #palette li {
         margin: 10px;
         width: 25px;
         height: 25px;
+        top: -5px;
     }
 }
